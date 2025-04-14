@@ -1,0 +1,64 @@
+body {
+  width: 80%;
+  background-color: whitesmoke;
+}
+
+h1 {
+  font-size: 250%;
+  color: #E52B50;
+  margin-left: 40px;
+}
+
+div {
+  border: #E52B50 10px solid;
+  padding: 15px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  width: 60%;
+  margin-left: 30%;
+  margin-bottom: 20px;
+}
+
+hr {
+  height: 6px;
+  background-color: pink;
+  border: none;
+}
+
+
+
+input[type="radio"] {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border: pink 3px solid;
+  background-color: pink;
+  /* border-radius: 1px; */
+  cursor: pointer;
+
+}
+
+input[type="radio"]:checked {
+  background-color: #000;
+
+  /* Cambia el color cuando está seleccionado */
+}
+
+ul {
+  list-style-type: none;
+  /* Elimina el estilo predeterminado */
+  counter-reset: lista-contador;
+}
+
+li {
+  counter-increment: lista-contador;
+}
+
+li::before {
+  content: counter(lista-contador, lower-alpha) ") ";
+  /* Agrega un paréntesis después de la letra */
+}
+
+li {
+  line-height: 2;
+}
